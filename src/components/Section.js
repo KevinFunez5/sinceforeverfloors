@@ -1,21 +1,21 @@
 import React from 'react'
 import styled from 'styled-components'
 
-function Section() {
+function Section({leftBtnText, rightBtnText, bottomBtnText, backgroundImg}) {
   return (
-    <Wrap>
+    <Wrap bgImage={backgroundImg}>
       <ItemText>
-        <h1>Home Page</h1>
+        {/* <h1>Home Page</h1> */}
       </ItemText>
       <ButtonGroup>
         <LeftButton>
-          Gallery 
+          {leftBtnText} 
         </LeftButton>
         <RightButton>
-          Services
+          {rightBtnText}
         </RightButton>
         <BottomButton>
-          Schedule Quote
+          {bottomBtnText}
         </BottomButton>
       </ButtonGroup>
     </Wrap>
@@ -30,11 +30,12 @@ const Wrap = styled.div`
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url('/images/floor.png');
+    // background-image: url('/images/floors.jpg');
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    background-image: ${props => `url("/images/${props.bgImage}")`}
 `
 const ItemText = styled.div`
     padding-top: 15vh;
@@ -44,6 +45,9 @@ const ItemText = styled.div`
 const ButtonGroup = styled.div`
     display: flex;
     margin-bottom: 30px;
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
 `
 
 const LeftButton = styled.div`
@@ -59,6 +63,7 @@ const LeftButton = styled.div`
     text-transform: uppercase;
     font-size: 12px;
     cursor: pointer;
+    margin: 10px;
 `
 
 const RightButton = styled(LeftButton)`
