@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import Section from './Section'
-import section from './Section'
 
 function Home() {
   return (
