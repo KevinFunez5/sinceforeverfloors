@@ -4,12 +4,12 @@ import Section from './Section'
 
 function Home() {
   return (
-    <div>
+    <div id="top-of-page">
       <Section 
         leftBtnText="Gallery"
-        rightBtnText="Services"
         bottomBtnText="Schedule Quote"
         backgroundImg="floors.jpg"
+
       />
       <Section 
         leftBtnText="Home"

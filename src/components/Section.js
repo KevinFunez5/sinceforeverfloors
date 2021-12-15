@@ -1,22 +1,32 @@
 import React from 'react'
 import styled from 'styled-components'
 
-function Section({leftBtnText, rightBtnText, bottomBtnText, backgroundImg}) {
+function Section({leftBtnText, rightBtnText, bottomBtnText, homeBtnText, backgroundImg}) {
   return (
     <Wrap bgImage={backgroundImg}>
       <ItemText>
         {/* <h1>Home Page</h1> */}
       </ItemText>
       <ButtonGroup>
-        <LeftButton>
+        <LeftButton
+        onClick={() => console.log("You clicked on the gallery!")}>
           {leftBtnText} 
         </LeftButton>
-        <RightButton>
+        <RightButton
+        onClick={() => console.log("You clicked on the services button!")}>
           {rightBtnText}
+          {<a href="#top-of-page"><button type="button" class="btn btn-warning">Top of Page</button></a>}
         </RightButton>
-        <BottomButton>
+        <BottomButton
+        onClick={() => console.log("You clicked on the schedule button")}
+        >
           {bottomBtnText}
         </BottomButton>
+        {/* <HomeButton
+        onClick={() => console.log("You clicked on the home button")}
+        >
+          {homeBtnText}
+        </HomeButton> */}
       </ButtonGroup>
     </Wrap>
   )
@@ -71,3 +81,6 @@ const RightButton = styled(LeftButton)`
 
 const BottomButton = styled(LeftButton)`
 `
+
+// const HomeButton = styled(LeftButton)`
+// `
