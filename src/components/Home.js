@@ -4,15 +4,6 @@ import Section from './Section'
 
 function Home() {
   return (
-    <div id="top-of-page">
-      <Section 
-        // id="top-of-page"
-        leftBtnText="Gallery"
-        rightBtnText="Services"
-        bottomBtnText="Schedule Quote"
-        backgroundImg="floors.jpg"
-      />
-    </div>
   )
 }
 
