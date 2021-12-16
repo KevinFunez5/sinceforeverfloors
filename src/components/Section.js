@@ -5,7 +5,7 @@ function Section({leftBtnText, rightBtnText, bottomBtnText, homeBtnText, backgro
   return (
     <Wrap bgImage={backgroundImg}>
       <ItemText>
-        {/* <h1>Home Page</h1> */}
+        <h1>Home Page</h1>
       </ItemText>
       <ButtonGroup>
         <LeftButton
@@ -13,9 +13,10 @@ function Section({leftBtnText, rightBtnText, bottomBtnText, homeBtnText, backgro
           {leftBtnText} 
         </LeftButton>
         <RightButton
-        onClick={() => console.log("You clicked on the services button!")}>
+        onClick={() => console.log("You clicked on the services button!")}
+        >
           {rightBtnText}
-          {<a href="#top-of-page"><button type="button" class="btn btn-warning">Top of Page</button></a>}
+          {/* {<a href="#top-of-page"><button type="button" class="btn btn-warning">Top of Page</button></a>} */}
         </RightButton>
         <BottomButton
         onClick={() => console.log("You clicked on the schedule button")}

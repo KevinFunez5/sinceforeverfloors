@@ -6,27 +6,10 @@ function Home() {
   return (
     <div id="top-of-page">
       <Section 
+        // id="top-of-page"
         leftBtnText="Gallery"
-        bottomBtnText="Schedule Quote"
-        backgroundImg="floors.jpg"
-
-      />
-      <Section 
-        leftBtnText="Home"
         rightBtnText="Services"
         bottomBtnText="Schedule Quote"
-        backgroundImg="floors.jpg"
-      />
-      <Section 
-        leftBtnText="Home"
-        rightBtnText="Gallery"
-        bottomBtnText="Schedule Quote"
-        backgroundImg="floors.jpg"
-      />
-      <Section 
-        leftBtnText="Home"
-        rightBtnText="Gallery"
-        bottomBtnText="Services"
         backgroundImg="floors.jpg"
       />
     </div>
